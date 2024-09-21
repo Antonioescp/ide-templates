@@ -1,0 +1,27 @@
+{
+    "author": "Juan Antonio Pérez Escorcia",
+    "name": "WCF service-oriented application",
+    "description": "A project for implementing a WCF service-oriented application hosted in IIS/WAS based on Visual Studio 2022 template.",
+    "identity": "Toni.Templates.WcfApp",
+    "shortName": "toniwcfapp",
+	"classifications": ["WCF", "Windows Communication Foundation", "Service oriented"],
+	"preferNameDirectory": "true",
+    "tags": {
+        "language": "C#",
+        "type": "project"
+    },
+    "sourceName": "Toni.WcfApp",
+    "symbols": {
+        "Framework": {
+            "type": "parameter",
+            "description": "The target framework for the project.",
+            "datatype": "choice",
+            "choices": [
+                {
+                    "choice": "v4.5"
+                }
+            ],
+            "defaultValue": "v4.5"
+        }
+    }
+}

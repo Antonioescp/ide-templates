@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+	<PackageLicenseExpression>MIT</PackageLicenseExpression>
+	<PackageType>Template</PackageType>
+	<Title>WCF service-oriented application</Title>
+	<PackageDescription>A project for implementing a WCF service-oriented application hosted in IIS/WAS based on Visual Studio 2022 template.</PackageDescription>
+	<PackageId>Toni.Templates.WcfApp</PackageId>
+	<PackageTags>WCF</PackageTags>
+	<Version>1.0.2</Version>
+	<Authors>Juan Antonio Peréz Escorcia</Authors>
+    <TargetFramework>net45</TargetFramework>
+    <IncludeContentInPack>true</IncludeContentInPack>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <ContentTargetFolders>content</ContentTargetFolders>
+    <NoWarn>$(NoWarn);NU5128</NoWarn>
+	<PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel.Web" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="**\*" Exclude="TemplatePack.csproj;**\bin\**;**\obj\**" />
+	<None Include="docs\README.md" Pack="true" PackagePath="\"/>
+  </ItemGroup>
+</Project>
